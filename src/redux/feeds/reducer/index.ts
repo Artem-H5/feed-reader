@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { Feed, FeedItem } from '../../../types';
-import parseXMLData from '../../../utilz';
+import parseXMLData from '../../../utilz/parseXMLData';
 import { defaultFeeds } from '../../../feedsData';
 import {
   getFeedDataFetch,

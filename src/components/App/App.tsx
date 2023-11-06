@@ -9,12 +9,14 @@ import Layout from '../Layout';
 import SingleArticlePage from '../pages/SingleArticlePage';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../../theme';
+import ScrollToTop from '../../utilz/ScrollToTop';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
         <Router>
+          <ScrollToTop />
           <Layout>
             <AuthGate>
               <Routes>
